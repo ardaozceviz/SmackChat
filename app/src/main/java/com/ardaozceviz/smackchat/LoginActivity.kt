@@ -1,7 +1,8 @@
 package com.ardaozceviz.smackchat
 
-import android.support.v7.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.view.View
 
 class LoginActivity : AppCompatActivity() {
@@ -15,7 +16,8 @@ class LoginActivity : AppCompatActivity() {
 
     }
 
-    fun loginUserButtonClicked(view: View) {
-
+    fun loginCreateUserButtonClicked(view: View) {
+        val createUserIntent = Intent(this, CreateUserActivity::class.java)
+        startActivity(createUserIntent)
     }
 }
